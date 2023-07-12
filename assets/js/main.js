@@ -65,7 +65,8 @@
    */
   const scrollto = (el) => {
     let header = select('#header')
-    let offset = header.offsetHeight
+    let headerPadding = window.getComputedStyle(header, null).getPropertyValue('padding-top')
+    let offset = header.offsetHeight - parseFloat(headerPadding.replace('px', ''))
 
     let elementPos = select(el).offsetTop
     window.scrollTo({
@@ -126,7 +127,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
