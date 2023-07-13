@@ -1,7 +1,8 @@
-/* genral */
+/* general */
 body{
   font-family:"open-sans" sans-serif;
   background-color: white;
+  overflow-x: hidden
 }
 
   a {
@@ -497,15 +498,17 @@ section {
   z-index: 10;
 }
 
+.about .content-wrapper{
+  padding: 20px 40px 0px 35px;
+}
 .about .content {
-  padding: 15px 30px 30px 30px;
+  height: 100%;
 }
 
 .about .content h3 {
   font-weight: 800;
   font-size: 35px;
   margin-bottom:12.5px;
-
 }
 
 .about .content p {
