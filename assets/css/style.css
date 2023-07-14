@@ -6,7 +6,7 @@ body{
 }
 
   a {
-    color:;
+    color:black;
     text-decoration: none;
   }
   
@@ -94,7 +94,7 @@ body{
 
 /* header */
 #header{
-  background: transparent;
+  /* background: transparent; */
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -368,7 +368,7 @@ body{
 }
 
 #hero-bgoverlay {
-  background: url("../img/hero-bg1.jpg") top no-repeat;
+  background: url("../img/hero-bg1.webp") top no-repeat;
   background-size: cover;
   position: static;
 }
@@ -741,58 +741,93 @@ section {
 .tabs .tab-pane p:last-child {
   margin-bottom: 0;
 }
+
+
+/*--------------------------------------------------------------
+# Why Choose Us
+--------------------------------------------------------------*/
+
+.why-choose-us {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-card i {
+  font-size: 48px;
+  color: rgb(139, 24, 26);
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  color: #777;
+}
+
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 40px 0;
+}
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info-box {
-  color: #444444;
+.contact {
+  padding: 80px 0;
+  /* background-color: #f5f5f5; */
+}
+
+.section-title {
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px 0 32px 0;
-  border-radius: 4px;
+  margin-bottom: 40px;
 }
 
-.contact .info-box i {
-  font-size: 32px;
+.info-box {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-box i {
+  font-size: 48px;
   color: rgb(139, 24, 26);
-  border-radius: 50%;
-  padding: 8px;
-  border: 2px dotted #f8d4d5;
+  margin-bottom: 20px;
 }
 
-.contact .info-box h3 {
-  font-size: 20px;
-  color: #777777;
-  font-weight: 700;
-  margin: 10px 0;
+.info-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.contact .info-box p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+.info-box p {
+  color: #777;
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.info-box:hover {
+  transform: translateY(-5px);
 }
 
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
 
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Footer
