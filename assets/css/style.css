@@ -585,7 +585,7 @@ section {
 --------------------------------------------------------------*/
 .services{
   background-color:black;
-  padding:0px 1px 1px 1px
+  padding-top:20px;
   
 }
 .services .container-10{
@@ -610,7 +610,7 @@ section {
   margin-left:4px;
   padding: 20px 2px;
   border-radius: 6px;
-  background: #252525;
+  /* background: #252525; */
   height:260px;
   
 }
@@ -635,7 +635,7 @@ section {
 }
 
 .services .icon-box h4 {
-  margin-left: 70px;
+  margin-left: 50px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -659,104 +659,12 @@ section {
 }
 
 .services .icon-box p {
-  margin-left: 70px;
+  margin-left: 50px;
   line-height: 24px;
   font-size: 14px;
 }
 
 
-/* tab section */
-.tabs .nav-tabs {
-  border: 3;
-  
-}
-
-.tabs .nav-link {
-  border: 1px solid #b9b9b9;
-  padding: 15px;
-  transition: 0.3s;
-  color: #111111;
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.tabs .nav-link i {
-  padding-right: 15px;
-  font-size: 48px;
-  
-}
-
-.tabs .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.tabs .nav-link:hover {
-  color: rgb(139, 24, 26)
-}
-
-.tabs .nav-link.active{
-  background: rgb(139, 24, 26);
-  color:white;
-  border-color:rgb(139, 24, 26);
-}
-
-@media (max-width: 768px) {
-  .tabs .nav-link i {
-    padding: 0;
-    line-height: 1;
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 575px) {
-  .tabs .nav-link {
-    padding: 15px;
-  }
-
-  .tabs .nav-link i {
-    font-size: 24px;
-  }
-}
-
-
-
-.tabs .tab-content {
-  margin-top: 30px;
-
-}
-
-.tabs.tab-pane img{
-  padding:2px;
-}
-
-.tabs .tab-pane h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.tabs .tab-pane ul {
-  list-style: none;
-  padding: 0;
-}
-
-.tabs .tab-pane ul li {
-  padding-bottom: 10px;
-}
-
-.tabs .tab-pane ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: rgb(139, 24, 26)
-}
-
-.tabs .tab-pane p:last-child {
-  margin-bottom: 0;
-}
 
 
 /*--------------------------------------------------------------
@@ -797,21 +705,20 @@ section {
 .section-divider {
   border: none;
   border-top: 1px solid #ddd;
-  margin: 40px 0;
+  margin: 10px 0;
 }
 
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
-  padding: 80px 0;
-  /* background-color: #f5f5f5; */
+#contact {
+  padding-top:10px;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .info-box {
