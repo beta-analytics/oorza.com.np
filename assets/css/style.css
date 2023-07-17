@@ -476,7 +476,7 @@ section {
 } */
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   position: static;
 }
 
@@ -509,7 +509,7 @@ section {
 /* About section */
 
 #about{
-  margin-top: 0px;
+  padding:10px 0;
 }
 
 .about .container {
@@ -532,6 +532,7 @@ section {
 
 .about .content p {
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .about .content .about-btn {
@@ -588,26 +589,16 @@ section {
   padding-top:20px;
   
 }
-.services .container-10{
+.services .container{
   color:white;
   background-color:black;
-  padding-top: 16px;
-  padding-right:2px;
-  padding-left:2px;
-  margin-top: 20px;
-  margin-right:4px;
-  margin-left:4px;
-  
-}
-.services .container .row{
-  margin-left:2px;
-  margin-right:2px;
+ 
 }
 
+
 .services .icon-box {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right:4px;
-  margin-left:4px;
   padding: 20px 2px;
   border-radius: 6px;
   /* background: #252525; */
@@ -628,7 +619,7 @@ section {
 
 .services .icon-box i {
   float: left;
-  color:rgb(139, 24, 26);
+  color:white;
   font-size: 40px;
   line-height: 0;
   padding:0px 2px 0px 2px;
