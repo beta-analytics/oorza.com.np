@@ -459,10 +459,7 @@ section {
   
 }
 
-.section-bg {
-  padding: 100px 0;
-  color:black;
-}
+
 
 /* .section-bg:before{
   content: "";
@@ -508,9 +505,6 @@ section {
 
 /* About section */
 
-#about{
-  padding:50px 0;
-}
 
 .about .container {
   position: relative;
@@ -525,30 +519,7 @@ section {
   height: 100%;
 }
 
-.about .content h3 {
-  font-weight: 800;
-  font-size: 35px;
-  margin-bottom:12.5px;
-}
 
-.about .content p {
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.about .content .about-btn {
-  padding: 8px 30px 9px 30px;
-  color:black;
-  border-radius: 50px;
-  transition: 0.3s;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-  display: inline-flex;
-  align-items: center;
-  border: 2px solid rgb(139, 24, 26);
-  text-decoration: none;
-}
 
 
 .about .content .about-btn:hover {
@@ -559,7 +530,6 @@ section {
 
 .about .icon-boxes .icon-box {
   margin-top: 26.5px;
-
 
 }
 
@@ -585,11 +555,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services{
-  background-color:black;
-  padding-top:60px;
-  
+.section-bg {
+  background-color: black;
 }
+
 .services .container{
   color:white;
   background-color:black;
@@ -665,7 +634,6 @@ section {
 
 
 .why-choose-us {
-  padding: 60px 0;
   background-color: #f5f5f5;
 }
 
@@ -705,14 +673,8 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-#contact {
-  padding-top:60px;
-}
 
-.section-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
+
 
 .info-box {
   height:250px;
@@ -755,7 +717,7 @@ section {
   font-size: 14px;
   background: #111111;
   max-height: 70px;
-  
+  margin-bottom: 0;
 
 
 }
