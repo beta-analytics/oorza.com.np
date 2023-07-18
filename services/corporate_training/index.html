@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../assets/img/Oorza Logo_2@4x.png">
+  <link rel="icon" type="image/x-icon" href="../../assets/img/Oorza Logo_2@4x.png">
   <title>Oorza - Corporate Training</title>
 
   <!-- Bootstrap CSS -->
@@ -53,21 +53,26 @@
     }
 
     .table-container i {
+      color: #e03a3c;
       margin-right: 5px;
+    }
+
+    .card-body i {
+      color: #e03a3c;
     }
   </style>
 
   <!-- Custom Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-  
+
 
   <!-- Vendor CSS Files -->
-  <!-- <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <!-- <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 
 
@@ -76,29 +81,36 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <h1 class="logo me-auto">
-        <a href="/" class="logo me-auto"><img src="../assets/img/Oorza Logo_2@4x.png" alt="" /></a>
+        <a href="/" class="logo me-auto"><img src="../../assets/img/Oorza Logo_2@4x.png" alt="" /></a>
       </h1>
       <!-- Navbar-->
-      <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav id="navbar" class="navbar order-last order-lg-0" style="color:black;">
         <ul>
           <li>
-            <a class="nav-link scrollto active" href="/">Home</a>
+            <a class="nav-link scrollto" href="/">Home</a>
           </li>
           <li>
-            <a class="nav-link scrollto active" href="/#about">About Us</a>
+            <a class="nav-link scrollto" href="/#about">About Us</a>
           </li>
           <li class="dropdown">
-            <a href="/#services" class="nav-link scrollto active"><span>Our Services</span></a>
+            <a href="#services"><span>Our Services</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li>
+                <a href="/services/consulting_solutions">Consulting Solutions</a>
+              </li>
+              <li>
+                <a href="/services/corporate_training">Corporate Training</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="/#why-us" class="nav-link scrollto"><span>Why Us</span></a>
 
           </li>
 
           <li>
-            <a href="/#why-us" class="nav-link scrollto active"><span>Why Us</span></a>
-
-          </li>
-
-          <li>
-            <a class="nav-link scrollto active" href="/#contact">Contact
+            <a class="nav-link scrollto" href="/#contact">Contact
             </a>
           </li>
         </ul>
@@ -108,11 +120,13 @@
     </div>
   </header>
 
-  <div style="margin-top:100px;">
+  <div style="margin-top:150px;">
     <div class="container">
       <div class="section-title">
         <h2>Corporate Training</h2>
       </div>
+      <p>We offer comprehensive training programs that equip professionals with the skills, knowledge, and competencies needed to excel in their roles. Our training solutions are designed to enhance individual and team performance, foster leadership development, and promote a culture of continuous learning. Key training areas include:
+      </p>
       <div class="soft-skills-list" data-aos="fade-up">
 
         <h2>Soft Skills Training</h2>
@@ -503,34 +517,34 @@
   <footer id="footer">
 
     <div class="container d-md-flex py-4">
-        <div class="me-md-auto text-center text-md-start">
-            <div class="copyright">
-                &copy; Copyright.
-                <a href="/#hero" class="logo me-auto"><img src="../assets/img/Oorza Logo_2@4x.png"
-                        alt="" /></a>All Rights Reserved
-            </div>
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright.
+          <a href="/#hero" class="logo me-auto"><img src="../../assets/img/Oorza Logo_2@4x.png" alt="" /></a>All Rights
+          Reserved
         </div>
-        <div class="social-links text-center text-md-end pt-3 pt-md-0">
-            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
     </div>
-</footer>
-<!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-    class="bi bi-arrow-up-short"></i></a>
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
   <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+  <script src="../../assets/js/main.js"></script>
 </body>
 
 </html>
