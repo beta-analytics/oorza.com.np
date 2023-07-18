@@ -2,7 +2,9 @@
 body{
   font-family:"open-sans" sans-serif;
   background-color: white;
-  overflow-x: hidden
+  overflow-x: hidden;
+  margin:0!important;
+  padding:0;
 }
 
   a {
@@ -96,7 +98,7 @@ body{
 #header{
   /* background: transparent; */
   transition: all 0.5s;
-  z-index: 997;
+  /* z-index: 997; */
   padding: 20px 0;
 }
 #header.header-scrolled {
@@ -274,7 +276,7 @@ body{
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
-  top: 0;
+  top: 10px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -285,15 +287,15 @@ body{
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 22px;
+  right: 40px;
   z-index:99;
 }
 
 .navbar-mobile ul {
   display: block;
   position: fixed;
-  top: 55px;
+  top: 70px;
   right: 15px;
   bottom: 15px;
   left: 15px;
@@ -555,52 +557,48 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+/* Add AOS animation library CSS to your project */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/aos/2.4.1/aos.css");
+
 .section-bg {
   background-color: black;
 }
 
-.services .container{
-  color:white;
-  background-color:black;
- 
+.services .container {
+  color: white;
+  background-color: black;
 }
 
-
 .services .icon-box {
-  margin-bottom: 10px;
-  margin-right:4px;
-  padding: 20px 2px;
+  margin-bottom: 20px;
+  padding: 20px;
   border-radius: 6px;
-  /* background: #252525; */
-  height:260px;
-  
+  background-color: #252525;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 405px) {
   .services .icon-box {
     height: 350px;
-  
   }
 }
 
 .services .icon-box:hover {
-  background: #2b2b2b;
+  background-color: #2b2b2b;
 }
 
 .services .icon-box i {
-  float: left;
-  color:white;
+  color: white;
   font-size: 40px;
-  line-height: 0;
-  padding:0px 2px 0px 2px;
 }
 
 .services .icon-box h4 {
-  margin-left: 50px;
+  margin-top: 10px;
   font-weight: 700;
-  margin-bottom: 15px;
   font-size: 18px;
-
 }
 
 .services .icon-box h4 a {
@@ -611,18 +609,41 @@ section {
 
 .services .icon-box h4 a:hover {
   color: rgb(139, 24, 26);
-  text-decoration: none;
-}
-
-.services .icon-box i:hover{
-  color: rgb(139, 24, 26)
-  
 }
 
 .services .icon-box p {
-  margin-left: 50px;
   line-height: 24px;
   font-size: 14px;
+}
+
+.services .icon-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  padding-left: 40px;
+}
+
+.services .icon-box ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.services .icon-box ul li i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.services .icon-box .btn-primary {
+  margin-top: 10px;
 }
 
 
