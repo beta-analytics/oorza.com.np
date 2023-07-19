@@ -1,4 +1,4 @@
-## Deplyoment
+## Deployment
 
 - Used Zone Editor Feature of CPanel to create a new A Record
   - DNS zone name: "oorza.com.np"
