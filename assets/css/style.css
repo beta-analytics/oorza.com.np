@@ -210,7 +210,6 @@ body{
 .navbar .dropdown ul li {
   min-width: 200px;
   
-  
 }
 
 .navbar .dropdown ul a {
@@ -221,7 +220,6 @@ body{
 
 .navbar .dropdown ul a i {
   font-size: 12px;
-  
 
 }
 
@@ -724,7 +722,8 @@ section {
 }
 
 .copyright a img{
-  height: 30px;
+  height: 25px;
+  margin: 0 8px;
 }
 
 
