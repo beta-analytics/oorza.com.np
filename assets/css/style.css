@@ -194,7 +194,7 @@ body{
 .navbar .dropdown ul {
   display: inline-block;
   position: absolute;
-  left: 30px;
+  left: 150px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
