@@ -6,19 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="../../assets/img/favicon.png">
   <title>Oorza - Corporate Training</title>
-
-  <!-- Bootstrap CSS -->
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
+  
   <style>
-
-    .accordion-item {
-      border: 1px solid #dee2e6;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      overflow: hidden;
-  }
 
   .accordion-header {
       background-color: #f8f9fa;
@@ -33,8 +24,29 @@
       text-align: left;
   }
 
+  .accordion{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .accordion-item {
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    flex-shrink: 0;
+    max-width: 800px;
+    width: 100%;
+}
+
   .accordion-body {
       padding: 10px 15px;
+      background-color: #f8f9fa;
   }
 
   .topics li {
@@ -49,27 +61,32 @@
       width: 1em;
       margin-left: -1em;
   }
-
-  /* Icons for each list item */
+  
   .topics li i {
       margin-right: 5px;
   }
-
-  /* Icons for the accordion buttons */
+  
   .accordion-button::after {
       
-      font-family: FontAwesome;
-      font-size: 16px;
-      color: #333;
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
+      display: none;
   }
 
- 
-
-  /* Hover effect for accordion headers */
+  .accordion-body > p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .accordion-body > p:hover {
+    color: #c0392b; 
+    
+    background-color: #f8f9fa;
+    
+    cursor: pointer;
+  }
+  
   .accordion-header:hover {
       background-color: #f1f1f1;
       transition: background-color 0.3s ease;
@@ -80,13 +97,9 @@
   }
 
   </style>
-
-  <!-- Custom Icons -->
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-
-
-  <!-- Vendor CSS Files -->
-  <!-- <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
+  
   <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
   <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
@@ -153,32 +166,13 @@
       <div class="accordion" id="accordionPanelsStayOpenExample">
         <!-- Customer Service Excellence -->
         <div class="accordion-item">
-            <h2 class="accordion-header" id="customerServiceExcellenceHeading">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#customerServiceExcellenceCollapse" aria-expanded="true" aria-controls="customerServiceExcellenceCollapse">
-                    Customer Service Excellence
-                </button>
-            </h2>
-            <div id="customerServiceExcellenceCollapse" class="accordion-collapse collapse show" aria-labelledby="customerServiceExcellenceHeading">
-                <div class="accordion-body">
-                    <ul class="topics">
-                        <li><i class="fa fa-user"></i> Personality Development</li>
-                        <li><i class="fa fa-handshake-o"></i> Interpersonal Skill</li>
-                        <li><i class="fa fa-volume-up"></i> Constructive & Active Listening</li>
-                        <li><i class="fa fa-comments"></i> Assertive Communication</li>
-                        <li><i class="fa fa-briefcase"></i> Balancing Professionalism with Personality (Workplace Professionalism)</li>
-                        <li><i class="fa fa-comments-o"></i> Effective Communication</li>
-                        <li><i class="fa fa-clock-o"></i> Time Management</li>
-                        <li><i class="fa fa-smile-o"></i> Exceeding Customers Expectations</li>
-                        <li><i class="fa fa-comments"></i> Effective Communication Skills</li>
-                        <li><i class="fa fa-comments-o"></i> Significance of Non Verbal Communications for Effective Communication</li>
-                        <li><i class="fa fa-heartbeat"></i> Stress Management</li>
-                        <li><i class="fa fa-tasks"></i> Multitasking</li>
-                        <li><i class="fa fa-phone"></i> Telephone Etiquette</li>
-                        <li><i class="fa fa-lightbulb-o"></i> Emotional Intelligence</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+          <h2 class="accordion-header" id="marketingHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marketingCollapse" aria-expanded="false" aria-controls="marketingCollapse">
+                Customer Service Excellence
+              </button>
+          </h2>
+         
+      </div>
 
         <!-- Management & Leadership -->
         <div class="accordion-item">
@@ -187,36 +181,7 @@
                     Management & Leadership
                 </button>
             </h2>
-            <div id="managementLeadershipCollapse" class="accordion-collapse collapse" aria-labelledby="managementLeadershipHeading">
-                <div class="accordion-body">
-                    <ul class="topics">
-                        <li><i class="fa fa-rocket"></i> Developing Leadership Skills for Managers: "Leadership Mantra"</li>
-                        <li><i class="fa fa-exchange"></i> Change Management</li>
-                        <li><i class="fa fa-users"></i> The Magic of Team Effort "High Five"</li>
-                        <li><i class="fa fa-heart"></i> Improving Relationship & Productivity: "The Magic of Apology"</li>
-                        <li><i class="fa fa-check-square"></i> Building Trust & Respect: "The One Minute Management"</li>
-                        <li><i class="fa fa-comments"></i> Assertive Communication</li>
-                        <li><i class="fa fa-exclamation-triangle"></i> Workplace Harassment & Remedies</li>
-                        <li><i class="fa fa-cogs"></i> Logistic Management</li>
-                        <li><i class="fa fa-comments"></i> Communication Skills for Managers</li>
-                        <li><i class="fa fa-trophy"></i> Performance based Appraisals</li>
-                        <li><i class="fa fa-check-square-o"></i> Appraisals for Performance Improvement</li>
-                        <li><i class="fa fa-lightbulb-o"></i> Emotional Intelligence</li>
-                        <li><i class="fa fa-users"></i> Motivating & Retaining Employees: "The Respectful Supervisor"</li>
-                        <li><i class="fa fa-users"></i> Managing People</li>
-                        <li><i class="fa fa-sitemap"></i> Delegation Skill Management</li>
-                        <li><i class="fa fa-exclamation-circle"></i> Conflict Resolution</li>
-                        <li><i class="fa fa-handshake-o"></i> Negotiation</li>
-                        <li><i class="fa fa-user-times"></i> Dealing with Difficult People</li>
-                        <li><i class="fa fa-heart"></i> Managing Employee Wellness and Well-being</li>
-                        <li><i class="fa fa-users"></i> Inclusion and Diversity People Management</li>
-                        <li><i class="fa fa-comments-o"></i> Public Speaking & Oral Presentation (Presentation Skill)</li>
-                        <li><i class="fa fa-smile-o"></i> Motivating & Influencing the Team</li>
-                        <li><i class="fa fa-sitemap"></i> Different Leadership Styles</li>
-                        <li><i class="fa fa-graduation-cap"></i> Train the Trainers (ToT)</li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
 
         <!-- Marketing -->
@@ -226,18 +191,7 @@
                     Marketing
                 </button>
             </h2>
-            <div id="marketingCollapse" class="accordion-collapse collapse" aria-labelledby="marketingHeading">
-                <div class="accordion-body">
-                    <ul class="topics">
-                        <li><i class="fa fa-bookmark"></i> Brand Management</li>
-                        <li><i class="fa fa-money"></i> Corporate Sales Techniques</li>
-                        <li><i class="fa fa-bullhorn"></i> Integrated Marketing and Communication</li>
-                        <li><i class="fa fa-money"></i> Deposit Marketing</li>
-                        <li><i class="fa fa-user"></i> Customer Relationship Management</li>
-                        <li><i class="fa fa-binoculars"></i> Prospecting</li>
-                    </ul>
-                </div>
-            </div>
+           
         </div>
 
         <!-- Accounting & Auditing -->
@@ -247,18 +201,7 @@
                     Accounting & Auditing
                 </button>
             </h2>
-            <div id="accountingAuditingCollapse" class="accordion-collapse collapse" aria-labelledby="accountingAuditingHeading">
-                <div class="accordion-body">
-                    <ul class="topics">
-                        <li><i class="fa fa-calculator"></i> Basic Accounting & Book Keeping</li>
-                        <li><i class="fa fa-line-chart"></i> Understanding Business & Financial Information (Accounting for Non Specialists)</li>
-                        <li><i class="fa fa-calculator"></i> Taxation</li>
-                        <li><i class="fa fa-line-chart"></i> Materiality & Risk Based Auditing</li>
-                        <li><i class="fa fa-credit-card"></i> Credit Rating with Financial Statements</li>
-                        <li><i class="fa fa-cogs"></i> Strengthening Internal Control and Accounting System Set up</li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
 
         <!-- Technical Skills -->
@@ -268,23 +211,7 @@
                     Technical Skills
                 </button>
             </h2>
-            <div id="technicalSkillsCollapse" class="accordion-collapse collapse" aria-labelledby="technicalSkillsHeading">
-                <div class="accordion-body">
-                    <ul class="topics">
-                        <li><i class="fa fa-file-excel-o"></i> Beginners, Moderate and Advanced Excel</li>
-                        <li><i class="fa fa-table"></i> Pivot Table in MS Excel</li>
-                        <li><i class="fa fa-keyboard-o"></i> 50+ Shortcuts in MS Excel</li>
-                        <li><i class="fa fa-cogs"></i> Macros in MS Excel</li>
-                        <li><i class="fa fa-file-word-o"></i> Microsoft Word</li>
-                        <li><i class="fa fa-pencil"></i> Drawing Impressive Powerpoints</li>
-                        <li><i class="fa fa-file-powerpoint-o"></i> Presentation Skills</li>
-                        <li><i class="fa fa-file-text"></i> Proposal & Report Writing</li>
-                        <li><i class="fa fa-envelope"></i> Writing Professional Letters, Emails and Memos</li>
-                        <li><i class="fa fa-pencil"></i> Professional Writing</li>
-                        <li><i class="fa fa-language"></i> General English Course</li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
 
         <!-- Employees Wellness Program -->
@@ -294,18 +221,7 @@
                     Employees Wellness Program
                 </button>
             </h2>
-            <div id="wellnessProgramCollapse" class="accordion-collapse collapse" aria-labelledby="wellnessProgramHeading">
-                <div class="accordion-body">
-                    <ul class="topics">
-                        <li><i class="fa fa-smile-o"></i> Enjoy Job & Life (50+ core skills)</li>
-                        <li><i class="fa fa-heartbeat"></i> Stress Management</li>
-                        <li><i class="fa fa-clock-o"></i> Time Management</li>
-                        <li><i class="fa fa-sun-o"></i> Wellness Adventures (Short / Periodical Fun Oriented Physical Exercises to cater Monotony and Fatigueness)</li>
-                        <li><i class="fa fa-comments"></i> Emotional & Mental Wellness Support (to curb anxiety, stress & depression)</li>
-                        <li><i class="fa fa-youtube"></i> Yoga Sessions</li>
-                    </ul>
-                </div>
-            </div>
+           
         </div>
 
         <!-- Others -->
@@ -315,16 +231,7 @@
                     Others
                 </button>
             </h2>
-            <div id="othersCollapse" class="accordion-collapse collapse" aria-labelledby="othersHeading">
-                <div class="accordion-body">
-                    <ul class="topics">
-                        <li><i class="fa fa-file-text"></i> Fiscal Policy</li>
-                        <li><i class="fa fa-money"></i> Monetary Policy</li>
-                        <li><i class="fa fa-usd"></i> Budget</li>
-                        <li><i class="fa fa-money"></i> Interest Rate Changes</li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
     </div>
       <!-- End  -->
