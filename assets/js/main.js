@@ -165,4 +165,37 @@
     });
   }
 
+  	const cardsWrapper = document.querySelector('.cards-wrapper');
+	cardsWrapper.appendChild(cardsWrapper.querySelector('.wrapper').cloneNode(true))
+  	let scrollSpeed = 1;
+  	let scrollIntervalId;
+
+  	const startScroll = function() {
+		scrollIntervalId = setInterval(() => {
+		  cardsWrapper.scrollLeft += scrollSpeed;
+		}, 12);
+  	};
+
+  	const stopScroll = function() {
+		clearInterval(scrollIntervalId);
+  	};
+
+  	startScroll();
+
+  	cardsWrapper.addEventListener('scroll', function(e) {
+		if (Math.round(cardsWrapper.scrollLeft) == (cardsWrapper.scrollWidth - cardsWrapper.clientWidth)) {
+			cardsWrapper.appendChild(cardsWrapper.querySelector('.wrapper').cloneNode(true))
+			cardsWrapper.scrollLeft = cardsWrapper.scrollLeft - cardsWrapper.querySelector('.wrapper').clientWidth;
+			cardsWrapper.querySelector('.wrapper').remove()
+		}
+	});
+
+  	cardsWrapper.addEventListener('mouseover', function(e) {
+		stopScroll();
+  	});
+
+  	cardsWrapper.addEventListener('mouseout', function(e) {
+		startScroll();
+  	});
+
 })()
