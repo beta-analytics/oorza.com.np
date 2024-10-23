@@ -203,6 +203,10 @@
 	let currentMousePos
 
 	cardsWrapper.addEventListener('mousedown', function(e) {
+    for ( let cards of cardsWrapper.querySelectorAll('.partner-card')) {
+      cards.style.cursor = "grabbing"
+    }
+
 		initialMousePos = e.clientX
 		isMouseDown = true
 	})
@@ -219,12 +223,15 @@
 			cardsWrapper.scrollLeft -= 10
 		}
 	})
-	cardsWrapper.addEventListener('mouseup', function() {
-		isMouseDown = false
-	})
 
-	cardsWrapper.addEventListener('mouseleave', function() {
-		isMouseDown = false
-	})
+	cardsWrapper.addEventListener('mouseup', onMouseUpOrLeave)  
+	cardsWrapper.addEventListener('mouseleave', onMouseUpOrLeave)
+  function onMouseUpOrLeave(e) {
+      for ( let cards of cardsWrapper.querySelectorAll('.partner-card')) {
+        cards.style.cursor = "grab"
+      }
+
+		  isMouseDown = false
+  }
 
 })()
