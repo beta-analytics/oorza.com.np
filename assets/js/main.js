@@ -198,4 +198,33 @@
 		startScroll();
   	});
 
+	let isMouseDown = false
+	let initialMousePos
+	let currentMousePos
+
+	cardsWrapper.addEventListener('mousedown', function(e) {
+		initialMousePos = e.clientX
+		isMouseDown = true
+	})
+	
+	cardsWrapper.addEventListener('mousemove', function(e) {
+		if(!isMouseDown) return
+
+		let xPos = initialMousePos
+		currentMousePos = e.clientX
+		initialMousePos = e.clientX
+		if(xPos - currentMousePos > 0) {
+			cardsWrapper.scrollLeft += 10
+		} else {
+			cardsWrapper.scrollLeft -= 10
+		}
+	})
+	cardsWrapper.addEventListener('mouseup', function() {
+		isMouseDown = false
+	})
+
+	cardsWrapper.addEventListener('mouseleave', function() {
+		isMouseDown = false
+	})
+
 })()
