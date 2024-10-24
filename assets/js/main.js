@@ -218,9 +218,9 @@
 		currentMousePos = e.clientX
 		initialMousePos = e.clientX
 		if(xPos - currentMousePos > 0) {
-			cardsWrapper.scrollLeft += 10
+			cardsWrapper.scrollLeft += xPos - currentMousePos
 		} else {
-			cardsWrapper.scrollLeft -= 10
+			cardsWrapper.scrollLeft -= currentMousePos - xPos
 		}
 	})
 
